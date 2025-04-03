@@ -18,3 +18,12 @@ import time
              res = dummy_value + dummy_value
      end = time.time()
      total_time += end - start
+      # 5 × 10^9 multiplication (of integer constants)
+     start = time.time()
+     for i in range(100000):
+         for j in range(50000):
+             res = dummy_value * dummy_value
+     end = time.time()
+     total_time += end - start
+ 
+     # 2 × 10^9 division (of integer constants)
