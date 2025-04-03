@@ -35,3 +35,9 @@ import time
      total_time += end - start
  
      # Print benchmarking data in different colors
+     print(ANSI_COLOR_YELLOW + "Benchmark 2:" + ANSI_COLOR_RESET)
+     print(ANSI_COLOR_GREEN + "64-bit Floating point operation benchmark" + ANSI_COLOR_RESET)
+     print(ANSI_COLOR_RED + "Which includes additions, multiplication, and division' is:", total_time, "seconds" + ANSI_COLOR_RESET)
+ 
+ if __name__ == "__main__":
+     main()
