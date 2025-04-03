@@ -21,3 +21,16 @@ import os
          while bytes_written_so_far < total_file_size:
              output_file_handler.write(output_buffer)
              bytes_written_so_far += one_time_size
+                   end = time.time()
+         total_time = end - start
+ 
+     # Read a whole file of 10^9 bytes, 10000 bytes each time
+     with open("dummyOneBillionBytes.txt", "rb") as input_file_handler:
+         start = time.time()
+         input_buffer = bytearray(one_time_size)
+ 
+         while input_file_handler.readinto(input_buffer) == one_time_size:
+             pass
+ 
+         end = time.time()
+         total_time += end - start
