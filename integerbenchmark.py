@@ -8,3 +8,13 @@ import time
  
  def main():
      total_time = 0
+     dummy_value = 7
+     res = 0
+ 
+     # 10^10 additions (of integer constants)
+     start = time.time()
+     for i in range(100000):
+         for j in range(100000):
+             res = dummy_value + dummy_value
+     end = time.time()
+     total_time += end - start
