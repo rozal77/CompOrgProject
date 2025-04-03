@@ -27,3 +27,13 @@ import time
      total_time += end - start
  
      # 2 × 10^9 division (of integer constants)
+      start = time.time()
+     for i in range(100000):
+         for j in range(20000):
+             res = dummy_value // dummy_value
+     end = time.time()
+     total_time += end - start
+ 
+     # Print benchmarking data in different colors
+     print(ANSI_COLOR_YELLOW + "Benchmark 1:" + ANSI_COLOR_RESET)
+     print(ANSI_COLOR_GREEN + "32-bit Integer operation benchmark" + ANSI_COLOR_RESET)
