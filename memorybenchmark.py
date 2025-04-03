@@ -22,3 +22,13 @@ import numpy as np
      # Read from 5 × 10^9 different array elements, 4 bytes each time
      for i in range(len(my_arr)):
          dummy_read_value = my_arr[i]
+     end = time.time()
+     total_time = end - start
+ 
+     # Print benchmarking data in different colors
+     print(ANSI_COLOR_YELLOW + "Benchmark 3:" + ANSI_COLOR_RESET)
+     print(ANSI_COLOR_GREEN + "Memory benchmark" + ANSI_COLOR_RESET)
+     print(ANSI_COLOR_RED + f"Which includes reading from, and writing to array, 4 bytes each time is: {total_time} seconds" + ANSI_COLOR_RESET)
+ 
+ if __name__ == "__main__":
+     main()
