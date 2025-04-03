@@ -27,3 +27,11 @@ import time
      total_time += end - start
  
      # 2 × 10^9 division (of double precision floating point constants)
+      start = time.time()
+     for i in range(100000):
+         for j in range(20000):
+             res = dummy_value / dummy_value
+     end = time.time()
+     total_time += end - start
+ 
+     # Print benchmarking data in different colors
