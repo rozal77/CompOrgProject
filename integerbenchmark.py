@@ -37,3 +37,7 @@ import time
      # Print benchmarking data in different colors
      print(ANSI_COLOR_YELLOW + "Benchmark 1:" + ANSI_COLOR_RESET)
      print(ANSI_COLOR_GREEN + "32-bit Integer operation benchmark" + ANSI_COLOR_RESET)
+      print(ANSI_COLOR_RED + "Which includes additions, multiplication, and division' is:", total_time, "seconds" + ANSI_COLOR_RESET)
+ 
+ if __name__ == "__main__":
+     main()
